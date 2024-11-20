@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white p-4">
+        <h1 class="text-center text-2xl font-bold">Pendaftaran Mahasiswa Baru</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6">
+        <h2 class="text-xl font-semibold">Formulir Pendaftaran</h2>
+        <form action="#" method="POST" class="bg-white shadow p-6 mt-4 rounded">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-medium">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" class="w-full border border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email" class="w-full border border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 font-medium">No. Telepon</label>
+                <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" class="w-full border border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="program" class="block text-gray-700 font-medium">Program Studi</label>
+                <select id="program" name="program" class="w-full border border-gray-300 p-2 rounded mt-2" required>
+                    <option value="" disabled selected>Pilih program studi</option>
+                    <option value="informatika">Teknik Informatika</option>
+                    <option value="sistem-informasi">Sistem Informasi</option>
+                    <option value="manajemen">Manajemen</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Daftar</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-600 text-white text-center p-4 mt-4">
+        <p>© 2024 Pendaftaran Mahasiswa Baru. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
